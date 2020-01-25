@@ -15,4 +15,12 @@ class SampleController extends Controller
         $to = 'test@gmail.com';
         Mail::to($to)->send(new SampleNotification($name, $text));
     }
+
+    public function SampleNotificationQueue()
+    {
+        $name = 'ララベル太郎';
+        $text = 'これからもよろしくお願いいたします';
+        $to = 'test@gmail.com';
+        Mail::to($to)->queue(new SampleNotification($name, $text));
+    }
 }

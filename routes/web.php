@@ -15,3 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('sample/mailable/send', 'SampleController@SampleNotification');
+Route::get('sample/mailable/sendqueue', 'SampleController@SampleNotificationQueue');
