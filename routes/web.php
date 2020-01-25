@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 Route::get('sample/mailable/send', 'SampleController@SampleNotification');
 Route::get('sample/mailable/sendqueue', 'SampleController@SampleNotificationQueue');
+Route::get('mail', 'MailController@index');
+
