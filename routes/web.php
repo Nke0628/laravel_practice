@@ -18,3 +18,7 @@ Route::get('sample/mailable/send', 'SampleController@SampleNotification');
 Route::get('sample/mailable/sendqueue', 'SampleController@SampleNotificationQueue');
 Route::get('mail', 'MailController@index');
 
+Route::get('/fileupload', 'FileUploadController@index');
+Route::get('/fileupload/usefopen', 'FileUploadController@useFopen');
+Route::get('/fileupload/useGuzzle', 'FileUploadController@useGuzzle');
+Route::post('/fileupload', 'FileUploadController@post');
