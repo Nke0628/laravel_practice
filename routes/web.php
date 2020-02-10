@@ -22,3 +22,6 @@ Route::get('/fileupload', 'FileUploadController@index');
 Route::get('/fileupload/usefopen', 'FileUploadController@useFopen');
 Route::get('/fileupload/useGuzzle', 'FileUploadController@useGuzzle');
 Route::post('/fileupload', 'FileUploadController@post');
+
+Route::get('/jquery', 'JqueryController@index');
+Route::get('/jquery/getShain', 'JqueryController@getShain');
