@@ -25,3 +25,5 @@ Route::post('/fileupload', 'FileUploadController@post');
 
 Route::get('/jquery', 'JqueryController@index');
 Route::get('/jquery/getShain', 'JqueryController@getShain');
+
+Route::get('/modal', 'ModalController@index');
