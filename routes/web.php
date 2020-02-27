@@ -27,3 +27,7 @@ Route::get('/jquery', 'JqueryController@index');
 Route::get('/jquery/getShain', 'JqueryController@getShain');
 
 Route::get('/modal', 'ModalController@index');
+
+Route::get('/management/propertymaster', 'ManagementController@indexMaster');
+Route::delete('/management/propertymaster/destory', 'ManagementController@destroyMaster');
+Route::get('/management/property', 'ManagementController@index');
