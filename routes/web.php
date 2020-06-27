@@ -31,3 +31,8 @@ Route::get('/modal', 'ModalController@index');
 Route::get('/management/propertymaster', 'ManagementController@indexMaster');
 Route::delete('/management/propertymaster/destory', 'ManagementController@destroyMaster');
 Route::get('/management/property', 'ManagementController@index');
+
+/**
+ * YouTubeAPIの確認用
+ */
+Route::get( '/youtube', 'YouTubeController@analyzeYouTube' );
